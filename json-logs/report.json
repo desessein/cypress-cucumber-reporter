@@ -1,0 +1,141 @@
+[
+  {
+    "description": "  Como um usuário\n  Eu quero ser informado sobre a indisponibilidade do sistema em desenvolvimento\n  Para visualizar a tela de desenvolvimento quando necessário",
+    "elements": [
+      {
+        "description": "",
+        "id": "tela-de-desenvolvimento;exibir-mensagem-de-sistema-em-desenvolvimento",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Exibir mensagem de sistema em desenvolvimento",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que o sistema está em desenvolvimento",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "o usuário tentar acessar o sistema",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2462000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "deve ser exibido o texto \"Sistema em Desenvolvimento\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "deve ser exibida a descrição \"Nosso sistema será lançado em breve.\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tela-de-desenvolvimento;redirecionar-para-tela-de-login-ao-tentar-acessar-sistema-em-desenvolvimento",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Redirecionar para tela de Login ao tentar acessar sistema em desenvolvimento",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "que o usuário deseja acessar o sistema em desenvolvimento",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "o usuário tentar clicar no botão \"Acessar\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "ele deve ser redirecionado para a tela de \"Login\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 926000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "tela-de-desenvolvimento",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Tela de Desenvolvimento",
+    "tags": [
+      {
+        "name": "@test",
+        "line": 1
+      }
+    ],
+    "uri": "cypress\\e2e\\core\\in-progress-page.feature"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "cypress-cucumber-reporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "cypress": "^12.17.2",
+    "cypress-slow-down": "^1.2.1",
+    "cypress-xpath": "^2.0.1",
+    "eslint-plugin-cypress": "^2.13.3",
+    "typescript": "~5.1.6"
+  },
+  "scripts": {
+    "cypress:run": "npx cypress run --spec ./cypress/e2e/core/**/*",
+    "report:generate": "node ./cucumber-html-report.js",
+    "report:open": "start ./reports/cucumber-htmlreport.html/index.html",
+    "test": "npm run cypress:run && npm run report:generate && npm run report:open"
+  },
+  "author": "",
+  "license": "ISC"
+}
